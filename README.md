@@ -2,6 +2,8 @@
 
 A user-friendly Streamlit-based chat interface that allows you to interact with local language models and chat with your documents. This application also features a separate chat page for interacting with Google's Gemini models.
 
+## Check it out here: https://thilakraaj-local-llam-chat-ui.streamlit.app/
+
 ## 🚀 Features
 
   * **Local Model Integration:** Seamlessly connect to and switch between various local language models running via Ollama.

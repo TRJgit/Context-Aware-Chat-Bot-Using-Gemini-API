@@ -48,12 +48,16 @@ if "file_content" not in st.session_state:
 with st.sidebar:
     st.header("Model Configuration")
     try:
-        local_models = [model['model'] for model in ollama.list().get('models', [])]
+        # Explicitly create a client to connect to Ollama
+        client = ollama.Client(host='http://localhost:11434')
+        # Get the model names from the 'model' key (CORRECTED LINE)
+        local_models = [model['model'] for model in client.list().get('models', [])]
+        
         if not local_models:
             st.warning("No local models found. Please ensure Ollama is running.")
             st.stop()
     except Exception as e:
-        st.warning(f"Could not connect to Ollama. Error: {e}")
+        st.error(f"Could not connect to Ollama. Please ensure it's running. \n\nError: {e}")
         local_models = []
 
     st.session_state.model = st.selectbox("Choose your model", local_models, key="model_selector")
@@ -73,7 +77,7 @@ with st.sidebar:
             st.session_state.file_content = read_txt(uploaded_file)
 
         # Check if reading was successful and update UI
-        if "Error" in st.session_state.file_content:
+        if "Error" in str(st.session_state.file_content):
             st.error(st.session_state.file_content)
             st.session_state.file_content = None # Clear content on error
         else:
