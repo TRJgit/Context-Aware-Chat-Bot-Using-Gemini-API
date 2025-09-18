@@ -30,7 +30,7 @@ To get started with this application, follow these steps:
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/Local-LLM-Chat-UI.git
+    git clone https://github.com/TRJgit/Local-LLM-Chat-UI.git
     cd Local-LLM-Chat-UI
     ```
 
@@ -111,6 +111,4 @@ The main dependencies of this project are:
   * **PyPDF2:** For reading PDF files.
   * **python-docx:** For reading DOCX files.
   * **google-generativeai:** For the Gemini chat functionality.
-  * **openai:** (Not used in the provided code, but listed in requirements)
-  * **groq:** (Not used in the provided code, but listed in requirements)
 
