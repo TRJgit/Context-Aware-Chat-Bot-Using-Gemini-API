@@ -1,6 +1,5 @@
 streamlit
 ollama
 PyPDF2
-docx
-openai
-groq
+python-docx
+google-generativeai
