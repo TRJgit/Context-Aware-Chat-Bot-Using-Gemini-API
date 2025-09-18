@@ -98,7 +98,7 @@ font = "sans serif"
 │   └── 1_Gemini_Chat.py # The Gemini chat page
 ├── .gitignore           # Files to be ignored by Git
 ├── Local_Chat.py        # The main application file
-├── README.md            # This file
+├── README.md            # README 
 └── requirements.txt     # Project dependencies
 ```
 
