@@ -5,7 +5,7 @@ An interactive chat application built with Streamlit that allows you to chat wit
 -----
 ## 🎥 Demo
 
-![App Demo]<video src="assets/Demo.mp4" controls width="600"></video>
+![App Demo](assets/Demo.gif)
 
 
 ---
