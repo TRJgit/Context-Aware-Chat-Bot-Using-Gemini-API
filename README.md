@@ -5,7 +5,7 @@ An interactive chat application built with Streamlit that allows you to chat wit
 -----
 ## 🎥 Demo
 
-![App Demo](assets/Geminichat.gif)
+![App Demo](assets/Demo.mp4)
 
 ---
 ## 🚀 Features
